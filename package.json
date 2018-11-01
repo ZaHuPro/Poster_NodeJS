@@ -1,0 +1,36 @@
+{
+  "name": "poster_nodejs",
+  "version": "1.0.0",
+  "description": "Social Media posting\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[P\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CApplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZaHuPro/Poster_NodeJS.git"
+  },
+  "keywords": [
+    "Social",
+    "Media",
+    "App",
+    "Post",
+    "Poster",
+    "Node"
+  ],
+  "author": "ZaHu Pro\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dhu\u001b[C\u001b[D\u001b[H\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZaHuPro/Poster_NodeJS/issues"
+  },
+  "homepage": "https://github.com/ZaHuPro/Poster_NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "md5": "^2.2.1",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.41.0"
+  }
+}
