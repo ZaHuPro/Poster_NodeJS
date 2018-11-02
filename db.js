@@ -23,3 +23,7 @@ const PostDate = sequelize.define('post',{
     content: Sequelize.STRING,
     tag: Sequelize.STRING,
 });
+
+module.exports.UserData = UserData;
+module.exports.PostDate = PostDate;
+sequelize.sync();
