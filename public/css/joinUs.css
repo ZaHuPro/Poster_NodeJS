@@ -1,20 +1,26 @@
 body{
- 
     background-color: cornflowerblue;
     color: rgb(255, 255, 255);
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     min-height: 100vh;
-
 }
 
+.headerMain{
+    padding-top: 20px;
+}
+.headerMain h1{
+    margin: 0%;
+}
+.headerMain p{
+    margin: 0%;
+}
 .mainBox{
-    min-height: 100vh;
 }
-.subBoxLeft{
-    background-image: url("../img/Log.svg");
-
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-}
+/* .subBoxLeft {
+        max-height:50vh;
+} */
+/* .subBoxLeft img{
+margin: 50px;
+max-height: 50vw;
+} */
