@@ -1,26 +1,50 @@
 body{
-    background-color: cornflowerblue;
-    color: rgb(255, 255, 255);
+    background-color:#333745;
+    color:rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     min-height: 100vh;
 }
 
 .headerMain{
-    padding-top: 20px;
+    padding: 20px;
+    background-color: #EA2E49;
 }
-.headerMain h1{
+
+.brand{
+    padding: 5px;
+}
+
+.brand h1{
     margin: 0%;
+    font-weight: 900;
 }
-.headerMain p{
-    margin: 0%;
+.posterHead{
+    padding: 5px;
 }
-.mainBox{
+
+.content{
+    padding: 10px;
+    background-color: #F6F792;
 }
-/* .subBoxLeft {
-        max-height:50vh;
-} */
-/* .subBoxLeft img{
-margin: 50px;
-max-height: 50vw;
-} */
+
+.footer{
+
+    background-color: #EA2E49;
+    padding: 2px;
+}
+
+
+
+.poster{
+    padding: 10px;
+    background-color: #77C4D3;
+}
+
+.postHead{
+    font-weight: 900;
+}
+
+.postcontant span span{
+    color: #DC3522;
+}
