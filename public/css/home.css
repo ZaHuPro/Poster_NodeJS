@@ -1,0 +1,84 @@
+body{
+    background-color: beige;
+    /* background-image: url("/bg/bg.jpg");
+    background-repeat: repeat;
+    background-size: 100%; */
+    color:rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.headerMain{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 20px;
+    
+    background-color: rgba(161, 236, 255, 0.5);
+}
+
+.brand{
+    padding: 5px;
+}
+
+.brand h1{
+    margin: 0%;
+    font-weight: 900;
+}
+
+.loginMain{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(119, 255, 176, 0.5);
+}
+.loginMain h3{
+    margin-bottom: 20px;
+}
+
+.registerMain{
+
+    padding: 5px;
+}
+
+.footer{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(161, 236, 255, 0.5);
+    padding: 2px;
+}
+.footerSub span:first-child{
+  float: left;
+}
+
+.footerSub span:last-child{
+    float: right;
+}
+
+
+/* .poster{
+    padding: 10px;
+    background-color: #77C4D3;
+}
+
+.postHead{
+    font-weight: 900;
+}
+
+.postcontant span span{
+    color: #DC3522;
+} */
+
+label{
+    /* margin: 0%; */
+    text-align: left;
+    float: left;
+}
+
+input{
+    min-width: 200px;
+}

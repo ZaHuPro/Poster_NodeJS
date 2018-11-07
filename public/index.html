@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS and Jquery JS-->
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="./std/jquery.min.js"></script>
 
     <!-- Sytle and JS Files -->
-    <link rel="stylesheet" href="./css/joinUs.css">
-    <script type="text/javascript" src="./js/joinUs.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <script type="text/javascript" src="./js/home.js"></script>
 
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Josefin+Sans" rel="stylesheet">  
@@ -20,43 +20,91 @@
 
   </head>
   <body class="container">
-    <div class="headerMain row">
-      <div class="brand col-2">
+    <div class="headerMain row align-items-center justify-content-center">
+      <div class="brand col-sm">
         <h1>Poster</h1>
           <span>Post anything you wish</span>
       </div>
-      <div class="posterHead col-10">
-          <h2>Get more things done with Loggin on Poster</h2>
-          <button>Join Us as New Member</button>
-          <button>Members Login</button>
+    </div>
+    <div class="loginMain row align-items-center justify-content-center">
+      <div class="loginSub col-md-10" id="postUpdater">
+        <h3>Get more things done with Loggin on Poster</h3>
+        <form>
+          <div class="form-row row align-items-stretch justify-content-center">
+            <div class="form-group col-md">
+              <label for="inputUserName">UserName</label>
+              <input type="email" class="form-control" id="inputUserName" placeholder="UserName">
+            </div>
+            <div class="form-group col-md">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="content row">
-      <div class="content col-6">
-          <div class="poster">
-            <div class="postHead">
-              <span>New Poster Hello Post</span> <span>User Name</span>
+
+    <div class="registerMain row align-items-center justify-content-center">
+      <div class="displayImg col-md">
+        <img src="/img/Log.svg">
+      </div>
+
+      <div class="registerSub col-md">
+          <h2 id="inputTitle" class="inputtitle">Join Us Now</h2>
+          <form id="inputForm">
+            <div class="form-group row align-items-center justify-content-center">
+              <label for="inputUserName" class="col-sm-3 col-form-label">UserName</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputUserName" placeholder="UserName">
+              </div>
             </div>
-            <div class="postcontant">
-              <p>Heloe this is an newi posts bysd</p>
-                <span><span>Tag : </span>Post</span>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
             </div>
+            <div class="form-group row">
+              <label for="inputFirstName" class="col-sm-3 col-form-label">FirstName</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputLastName" class="col-sm-3 col-form-label">LastName</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEMali" class="col-sm-3 col-form-label">E-Mali</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputEMali" placeholder="E-Mali">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPhone" class="col-sm-3 col-form-label">Phone</label>
+              <div class="col-sm">
+                <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+              </div>
+            </div>
+          </form>
+          
+          <div class="form-group row">
+            <div class="col-sm">
+              <button id="formbtn" class="btn btn-primary">Register</button>
             
+            </div>
           </div>
       </div>
-      <div class="content col-6">
-
-        </div>
     </div>
 
-    <div class="footer row">
-      <div class="footerRight col">
-        <p>CopyRights by Poster</p>
+    <div class="footer row align-items-center justify-content-center">
+      <div class="footerSub col-sm">
+        <!-- <span>CopyRights by Poster</span> -->
+        <span>Designed by ZaHuPro</span>
       </div>
-      <div class="footerLeft col">
-          <p>Designed by ZaHuPro</p>
-      </div>
-     
     </div>
 
   </body>
