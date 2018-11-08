@@ -15,6 +15,11 @@ $(document).ready(function(){
         console.log("Not found")
     }
 
+    $(document).on('click', '#logout' , function(){
+        localStorage.removeItem("user");
+        console.log(origin);
+        window.location.href = origin;
+    });
 
 
     
