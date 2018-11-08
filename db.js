@@ -17,7 +17,7 @@ const UserData = sequelize.define('User',{
     password: Sequelize.STRING
 });
 
-const PostDate = sequelize.define('post',{
+const PostData = sequelize.define('Post',{
     username: Sequelize.STRING,
     title: Sequelize.STRING,
     content: Sequelize.STRING,
@@ -25,5 +25,5 @@ const PostDate = sequelize.define('post',{
 });
 
 module.exports.UserData = UserData;
-module.exports.PostDate = PostDate;
+module.exports.PostData = PostData;
 sequelize.sync();

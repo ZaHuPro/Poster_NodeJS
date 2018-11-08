@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS and Jquery JS-->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="./std/jquery.min.js"></script>
+
+    <!-- Sytle and JS Files -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/post.css">
+    <script type="text/javascript" src="./js/post.js"></script>
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Josefin+Sans" rel="stylesheet">  
+
+    <title>Poster || Post anything you wish</title>
+
+  </head>
+  <body class="container">
+    <div class="headerMain row align-items-center justify-content-center">
+      <div class="brand col-sm">
+        <h1>Poster</h1>
+          <span>Post anything you wish</span>
+      </div>
+    </div>
+
+    <div class="userMain row align-items-center justify-content-center">
+      <div class="userwelcome col-md">
+        <p>Welcome to Poster</p>
+        <h3 id="fullname">Guest Sample</h3>
+      </div>
+      <div class="userwelcome col-md">
+          <p id="userName">Guest</p>
+        <p id="useremail">xxxx@Guest.com</p>
+        <p id="userphone">xxxxxxxxxx</p>
+      </div>
+      <div class="userwelcome col-md">
+        <!-- <button id="profile" class="disabled btn btn-success">Profile</button> -->
+        <button id="logout" class="disabled btn btn-primary">LogOut</button>
+      </div>
+    </div>
+
+    <div class="content row align-items-center justify-content-center">
+      <div class="poster col-md-4">
+        <h2 id="Title" class="inputtitle">Make a post</h2>
+        <form id="inputForm">
+          <div class="form-group row align-items-center justify-content-center">
+            <label for="inputTitle" class="col-sm-3 col-form-label">Title</label>
+            <div class="col-sm">
+              <input type="text" class=" form-control" id="inputTitle" placeholder="Title">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputMessage" class="col-sm-3 col-form-label">Message</label>
+            <div class="col-sm">
+              <textarea class="form-control" id="inputMessage" rows="5" placeholder="Write anything here"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputTag" class="col-sm-3 col-form-label">Tag</label>
+            <div class="col-sm">
+              <input type="text" class="form-control" id="inputTag" placeholder="Post, Social, Animal..">
+            </div>
+          </div>
+        </form>
+        <div class="form-group row">
+          <div class="col-sm">
+            <button id="post" class="btn btn-primary">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="diaplay col-md">
+        <div class="card-columns" id="postCard">
+
+        </div>
+    </div>
+    </div>
+
+    <div class="footer row align-items-center justify-content-center">
+      <div class="footerSub col-sm">
+        <!-- <span>CopyRights by Poster</span> -->
+        <span>Designed by ZaHuPro</span>
+      </div>
+    </div>
+
+  </body>
+</html>
