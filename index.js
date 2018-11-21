@@ -112,7 +112,7 @@ app.delete('/userDelect', function (req, res) {
                 res.status(404).send('User not found');
             } else {
                 res.json(data);
-            }      
+            }
         })
 })
 
@@ -141,6 +141,68 @@ app.get('/postList', function(req, res){
             res.json(list);
         });
 })
+
+
+
+
+app.post('/userCheck', function (req, res) {
+    let user, post;
+    sequelize.sync()
+        .then(function () {
+            return UserData.findOne({
+                where: {
+                    username: req.body.username,
+                    password: req.body.password
+                }
+            })
+        })
+        .then(function (data) {
+            user = data;
+            return PostData.findOne({
+                where: {
+                    userid: user.id
+                }
+            })
+        })
+        .then(function (data) {
+            post = data;
+            res.json({
+                post: post,
+                user: user
+            });
+        })
+});
+
+
+
+// app.post('/userAdd', function (req, res) {
+//     let user, post;
+//     sequelize.sync()
+//         .then(function () {
+//             return UserData.create({
+//                 username: req.body.username,
+//                 password: req.body.password,
+//             })
+//         })
+//         .then(function (data) {
+//             user = data;
+//             return PostData.create({
+//                 userid: user.id,
+//                 email: req.body.email,
+//                 firstname: req.body.firstname,
+//                 lastname: req.body.lastname,
+//                 phone: req.body.phone
+//             })
+//         })
+//         .then(function (data) {
+//             post = data;
+//             res.json({
+//                 post: post,
+//                 user: user
+//             });
+//         })
+// });
+
 
 
 app.listen(1100, function(){
